@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/02-timer.js"],"names":["console","log"],"mappings":";AACAA,QAAQC,IAAI","file":"02-timer.7e8e1c79.js","sourceRoot":"../src","sourcesContent":["\nconsole.log('timer');"]}
