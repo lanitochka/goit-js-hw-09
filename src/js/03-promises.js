@@ -17,24 +17,24 @@ function createPromise(position, delay) {
   });
 }
 
-const elem = {
+const refs = {
   delay: document.querySelector('input[name=delay]'),
   step: document.querySelector('input[name=step]'),
   amount: document.querySelector('input[name=amount]'),
   submit: document.querySelector('button[type=submit]')
 };
 
-elem.submit.addEventListener('click', function (e) {
+refs.submit.addEventListener('click', function (e) {
   e.preventDefault();
 
   let currDelay;
 
-  for (let i = 1; i <= Number(elem.amount.value); i++) {
+  for (let i = 1; i <= Number(refs.amount.value); i++) {
 
     if (i === 1) {
-      currDelay = Number(elem.delay.value);
+      currDelay = Number(refs.delay.value);
     } else {
-      currDelay += Number(elem.step.value);
+      currDelay += Number(refs.step.value);
     }
 
     createPromise(i, currDelay)
