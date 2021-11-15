@@ -40,11 +40,11 @@ elem.submit.addEventListener('click', function (e) {
     createPromise(i, currDelay)
       .then(({position, delay}) => {
         // console.log({position, delay});
-          Notiflix.Notify.success(`Fulfilled promise ${position} in ${delay}ms`);
+          Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
       .catch(({position, delay}) => {
         // console.log({position, delay});
-          Notiflix.Notify.failure(`Rejected promise ${position} in ${delay}ms`);
+          Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
   }
 });
